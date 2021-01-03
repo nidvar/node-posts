@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+.homepage{
+    text-align:center;
+}
+input{
+    display:block;
+}
+textarea{
+    display:block;
+    height:200px;
+    width:400px;
+}
+.mycontainer{
+    padding:20px;
+}
+.singlepost{
+    width:700px;
+    margin:auto;
+}
+.postlist{
+    padding:20px;
+    text-align:left;
+    width:700px;
+    margin:auto;
+}
+.post{
+    text-align: left;
+    margin:10px;
+    padding:10px;
+}
+h1{
+    text-align: center;
+    font-weight:lighter;
+    letter-spacing: 4px;
+    font-size:40px;
+    margin:40px;
+}
+h3{
+    font-weight:lighter;
+    margin:0;
+}
+.delete{
+    background-color:red;
+    color:white;
+    width:60px;
+    padding:5px;
+    border-radius:5px;
+    cursor: pointer;
+    text-align: center;
+}
+ul{
+    display:flex;
+    margin:auto;
+    padding:0;
+    background-color: black;
+    width:100%;
+    justify-content: center;
+    color:white;
+}
+ul a:link{
+    color:white;
+}
+li{
+    color:white;
+    list-style-type: none;
+    margin: 30px;
+}
+a:link{
+    color:black;
+    text-decoration: none;
+}
+form{
+    width:400px;
+    margin:auto;
+}

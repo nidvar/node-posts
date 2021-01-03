@@ -1,0 +1,22 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class='postlist'>
+        <h1>List of posts</h1>
+        <%if(data.length <= 0){%>
+            <p>There are no posts</p>
+        <%}else{%>
+            <%data.forEach(a=>{%>
+                <a href="/singlepost/<%=a._id %>">
+                    <div class='post'>
+                        <h3>  <%=a.title%>  </h3>
+                    </div>
+                </a>
+            <%})%>
+        <%}%>
+    </div>
+
+</body>
+</html>

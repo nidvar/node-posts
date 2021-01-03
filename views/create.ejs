@@ -1,0 +1,21 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <h1>Create new post</h1>
+
+    <div class='mycontainer'>
+        <form action='/posts' method='POST'>
+            Title:
+            <input type='text' name='title' id='title' required>
+            Message:
+            <textarea type='text' name='message' id='message' required></textarea>
+            <br />
+            <button>POST</button>
+        </form>
+    </div>
+
+    
+
+</body>
+</html>

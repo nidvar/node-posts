@@ -1,0 +1,25 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class='mycontainer singlepost'>
+        <h2><%=data.title %></h2>
+        <p><%=data.message %></p>
+        <p class='delete'>DELETE</p>
+    </div>
+    
+
+    <script>
+        document.querySelector('.delete').addEventListener('click',()=>{
+            console.log(window.location.pathname)
+
+            fetch(`${window.location.pathname}`, {method:'DELETE'}).then(a=>{
+                return a.json()
+            }).then(a=>{
+                window.location.href = a.redirect
+            }).catch()
+        })
+    </script>
+</body>
+</html>
